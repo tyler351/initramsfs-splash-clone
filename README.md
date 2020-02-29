@@ -1,0 +1,2 @@
+# Initramfs Splash
+
