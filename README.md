@@ -17,7 +17,8 @@ must be in PNG format and named splash.png.  Other restictions are the image res
 small than the screen at boot.  (This is a limitation of the image loading program.)
 
 Edit your config.txt file and add the following line.
-`initramfs initramfs.img
+
+`initramfs initramfs.img`
 
 
 # Todo
