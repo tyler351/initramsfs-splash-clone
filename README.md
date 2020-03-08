@@ -1,5 +1,4 @@
 # Initramfs Splash
----
 
 This is the next version of the initramfs still only a sample. The files contained with-in have no warrenty of any kind.
 
@@ -45,7 +44,7 @@ BusyBox 1.31.1 has been recompiled to be smaller, and has had many features remo
 ## BusyBox
 
 In the config/busybox.config are the settings used to compile busybox used in this project. If you wish to compile busybox yourself you can use this config file as a base to add or remove features.  
-**<u>/!\</u> WARNING <u>/!\\</u> :** *Removing some features has not been tested and may cause initramfs splash to fail.*
+**<u>/!\\</u> WARNING <u>/!\\</u> :** *Removing some features has not been tested and may cause initramfs splash to fail.*
 
 ## Bugs
 
