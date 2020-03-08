@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /tmp/initramfs || exit 1
+find . | cpio -oH newc | gzip -9 | sudo tee /boot/initramfs.img > /dev/null
