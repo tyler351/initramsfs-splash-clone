@@ -26,8 +26,9 @@ initramfs initramfs.img
 
 ## Tools
 
-**edit_initramfs** : This script that will unpack the current initramfs stored it the boot folder to the tmp folder  
-**pack_initramfs** : This script will pack the /tmp/initramfs folder into the initramfs.img in the boot folder  
+**edit_initramfs**   : This script that will unpack the current initramfs stored it the boot folder to the tmp folder  
+**pack_initramfs**   : This script will pack the /tmp/initramfs folder into the initramfs.img in the boot folder  
+**create_initramfs** : This script will create a new root layout for the initramfs  
 
 ## Todo
 
