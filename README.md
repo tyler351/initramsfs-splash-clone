@@ -15,15 +15,20 @@ to enable a splash image at startup.  This is a universal initramfs it will work
 
 ## How To Use
 
-Copy the initramfs.img to you boot folder and you also need to provide a splash image to display. This file
-must be in PNG format and named splash.png.  ~~Other restictions are the image resolution must be the same or small than the screen at boot.  (This is a limitation of the image loading program.)~~ This problem has been resolved.
+Copy the initramfs.img to you boot folder and you also need to provide a splash image to display. ~~This file
+must be in PNG format and named splash.png.~~  ~~Other restictions are the image resolution must be the same or small than the screen at boot.  (This is a limitation of the image loading program.)~~ This problem has been resolved.
 
 Edit your config.txt file and add the following line.
 
 ```
 initramfs initramfs.img
 ```
+## Splash config
 
+It's now possible to set the name of the splash image. I've added the ability to read a configuration file from the boot folder named splash.txt.  
+**current settings**
+image=*imagename*  #imagename can be a jpg, png, or bmp the image must be stored in boot
+  
 ## Tools
 
 **edit_initramfs**   : This script that will unpack the current initramfs stored it the boot folder to the tmp folder  
@@ -33,13 +38,13 @@ initramfs initramfs.img
 ## Todo
 
 * [X] - Add image resizing
-* [ ] - Ability to select image
+* [X] - Ability to select image
 * [X] - Reduce size
 * [ ] - Investigate if Busybox can be refined even more.
 
 ## Other Software used
 
-* [BusyBox 1.31.1](busybox.net)
+* [BusyBox 1.31.1](https://www.busybox.net/)
 * fbsplash 0.5 *my own project*
 
 ## Updates
