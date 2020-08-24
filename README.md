@@ -26,6 +26,7 @@ Next you need the image you want to display this can be a PNG,JPEG, or BMP copy 
 ```
 ## Initramfs-Splash
 image=splash.png
+fullscreen=0
 ```
 *IMPORTANT* replace splash.png with your image
 and finally copy the initramfs.img to your /boot
@@ -40,8 +41,9 @@ to enable a splash image at start-up.  This is a universal initramfs it will wor
 ## Splash configuration
 
 It's now possible to set the name of the splash image. I've added the ability to read a configuration file from the boot folder named splash.txt.  
-**current settings**
-image=*imagename*  #imagename can be a jpg, png, or bmp the image must be stored in boot
+**current settings**  
+image=*imagename*  #imagename can be a jpg, png, or bmp the image must be stored in boot  
+fullscreen=*[0|1]*  #Show image full screen. 0 = regular size, 1 full screen maintains aspect ratio.
   
 ## Tools
 
