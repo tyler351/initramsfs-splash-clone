@@ -43,7 +43,8 @@ to enable a splash image at start-up.  This is a universal initramfs it will wor
 It's now possible to set the name of the splash image. I've added the ability to read a configuration file from the boot folder named splash.txt.  
 **current settings**  
 image=*imagename*  #imagename can be a jpg, png, or bmp the image must be stored in boot  
-fullscreen=*[0|1]*  #Show image full screen. 0 = regular size, 1 full screen maintains aspect ratio.
+fullscreen=*[0|1]*  #Show image full screen. 0 = regular size, 1 full screen maintains aspect ratio.  
+stretch=*[0|1]*   #Show image full screen and stretch it to fit the display. 
   
 ## Tools
 
@@ -63,7 +64,7 @@ fullscreen=*[0|1]*  #Show image full screen. 0 = regular size, 1 full screen mai
 ## Other Software used
 
 * [BusyBox 1.31.1](https://www.busybox.net/)
-* fbsplash 0.5 *my own project*
+* fbsplash 0.6 *my own project*
 
 ## Updates
 
@@ -76,7 +77,8 @@ In the config/busybox.config are the settings used to compile busybox used in th
 
 ## FBSplash
 
-FBSplash is my own image loader it has been updated to version 0.5 this has solved the issue of images that are too large for the display crashing.  If an image is too large it will now be scaled to fit the screen and maintain it's aspect ratio.
+FBSplash is my own image loader it has been updated to version 0.5 this has solved the issue of images that are too large for the display crashing.  If an image is too large it will now be scaled to fit the screen and maintain it's aspect ratio.  
+FBSplash version 0.6 is now included and adds the option to use free aspect this will allow for image stretching. 
 
 ## Bugs
 
