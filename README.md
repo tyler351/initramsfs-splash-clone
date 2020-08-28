@@ -9,6 +9,8 @@ The files contained with-in have no warranty of any kind.
 
 WARNING This is not yet compatible with NETBOOT OR MSD BOOTING!! Support will be coming!
 
+Not compatible with overlayfs from raspi-config out of the box see [OVERLAYFS.md](OVERLAYFS.md "Workaround available")
+
 
 ## Quick Start Guide
 
