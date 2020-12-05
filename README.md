@@ -12,6 +12,9 @@ WARNING This is not yet compatible with NETBOOT OR MSD BOOTING!! Support will be
 Not compatible with overlayfs from raspi-config out of the box see [OVERLAYFS.md](OVERLAYFS.md "Workaround available")
 
 
+## * **IMPORTANT NOTICE** *  
+Recent changes in the kernel require an update to the initramfs.img simply pull the changes and replace your initramfs.img with the new version. Please be aware that there was a bug in fbsplash and if you use this utility outside the initramfs.img you will need to update it as well the current version is now 0.7.
+
 ## Quick Start Guide
 
 To get up and running is very simple!!
@@ -66,10 +69,11 @@ stretch=*[0|1]*   #Show image full screen and stretch it to fit the display.
 ## Other Software used
 
 * [BusyBox 1.31.1](https://www.busybox.net/)
-* fbsplash 0.6 *my own project*
+* fbsplash 0.7 *my own project*
 
 ## Updates
 
+fbsplash 0.7 Version update. Correct a bug that clears the screen immeditely after exit, this bug is due to recent changes to the Kernel.   
 BusyBox 1.31.1 has been recompiled to be smaller, and has had many features removed. There still might be more that can be removed.
 
 ## BusyBox
