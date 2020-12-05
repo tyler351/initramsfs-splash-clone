@@ -84,12 +84,13 @@ In the config/busybox.config are the settings used to compile busybox used in th
 ## FBSplash
 
 FBSplash is my own image loader it has been updated to version 0.5 this has solved the issue of images that are too large for the display crashing.  If an image is too large it will now be scaled to fit the screen and maintain it's aspect ratio.  
-FBSplash version 0.6 is now included and adds the option to use free aspect this will allow for image stretching. 
+FBSplash version 0.7 is now included and adds the option to use free aspect this will allow for image stretching. 
 
 ## Bugs
 
 * It isn't a BUG as much as a limitation with Pi 4B and the **vc-fkms-v3d** driver enabled. This causes the screen to blank and the splash to remain on screen for a short time.  This is caused be the driver it must reset the display.  I will be including a service that will bring the splash back after the reset.
 
+* **[PATCHED]** Images flash and vanish quickly after a kernel update.
 
 
 
